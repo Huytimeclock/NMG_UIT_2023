@@ -13,6 +13,9 @@ NonColliderObject.txt
 
 #NonColliderObject
 6	90	150	60000
+6	190	165	60001
+6	207	165	60001
+6	224	165	60001
 
 # MARIO
 0	120	10
