@@ -87,6 +87,9 @@
     <ClInclude Include="AssetIDs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NonColliderObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp">
@@ -146,6 +149,9 @@
     <ClCompile Include="Utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NonColliderObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="scene02.txt">
@@ -173,6 +179,9 @@
       <Filter>Source Files</Filter>
     </Text>
     <Text Include="coin.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="NonColliderObject.txt">
       <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>

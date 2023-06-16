@@ -9,6 +9,7 @@
 #include "Portal.h"
 #include "Coin.h"
 #include "Platform.h"
+#include "NonColliderObject.h"
 
 #include "SampleKeyEventHandler.h"
 
@@ -149,6 +150,18 @@ void CPlayScene::_ParseSection_OBJECTS(string line)
 
 		break;
 	}
+
+	case OBJECT_TYPE_NON_COLLIDER:
+		if (lastNumber == ID_ANI_BIG_BUSH)
+			obj = new CBigBush(x, y);
+		else if (lastNumber == ID_ANI_SMALL_BUSH)
+			obj = new CSmallBush(x, y);
+		else
+		{
+			DebugOut(L"[ERROR] Invalid last number for Brick object: %d\n", lastNumber);
+			return;
+		}
+		break;
 
 	case OBJECT_TYPE_PORTAL:
 	{

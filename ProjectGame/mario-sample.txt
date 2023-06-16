@@ -18,3 +18,4 @@ height	240
 10	textures\enemies.png
 20	textures\misc-7.png
 30	textures\misc2.png
+40	textures\1-1map.png
