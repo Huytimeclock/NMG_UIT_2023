@@ -100,6 +100,7 @@ void CPlayScene::_ParseSection_OBJECTS(string line)
 	int object_type = atoi(tokens[0].c_str());
 	float x = (float)atof(tokens[1].c_str());
 	float y = (float)atof(tokens[2].c_str());
+	int lastNumber = atoi(tokens[tokens.size() - 1].c_str()); // Get the last number from the tokens
 
 	CGameObject* obj = NULL;
 
@@ -117,7 +118,17 @@ void CPlayScene::_ParseSection_OBJECTS(string line)
 		DebugOut(L"[INFO] Player object has been created!\n");
 		break;
 	case OBJECT_TYPE_GOOMBA: obj = new CGoomba(x, y); break;
-	case OBJECT_TYPE_BRICK: obj = new CBrick(x, y); break;
+	case OBJECT_TYPE_BRICK:
+		if (lastNumber == ID_SPRITE_BRICK)
+			obj = new CBrick(x, y);
+		else if (lastNumber == ID_SPRITE_BRICK2)
+			obj = new CBrick2(x, y);
+		else
+		{
+			DebugOut(L"[ERROR] Invalid last number for Brick object: %d\n", lastNumber);
+			return;
+		}
+		break;
 	case OBJECT_TYPE_COIN: obj = new CCoin(x, y); break;
 
 	case OBJECT_TYPE_PLATFORM:
