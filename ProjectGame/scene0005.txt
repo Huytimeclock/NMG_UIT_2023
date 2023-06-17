@@ -5,6 +5,7 @@ coin.txt
 cloud.txt
 brick.txt
 NonColliderObject.txt
+goomba.txt
 #
 [OBJECTS]
 # type	x	y	extra_settings per object type	TYPEOFOBJECT
@@ -99,7 +100,9 @@ NonColliderObject.txt
 1 	367	180	16	15	32	51000	52000	53000	10001
 1 	382	180	16	15	32	51000	52000	53000	10001
 
+2	300	100
+
 
 #Portal 
-50	200	300	216	180	1
+50	200	100	216	180	1
 
