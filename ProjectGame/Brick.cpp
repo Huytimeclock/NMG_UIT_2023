@@ -80,6 +80,69 @@ void CBrickRed9::Render()
 	//RenderBoundingBox();
 }
 
+void CBrickBLUE1::Render()
+{
+	CAnimations* animations = CAnimations::GetInstance();
+	animations->Get(ID_ANI_BRICKBLUE1)->Render(x, y);
+	//RenderBoundingBox();
+}
+
+void CBrickBLUE2::Render()
+{
+	CAnimations* animations = CAnimations::GetInstance();
+	animations->Get(ID_ANI_BRICKBLUE2)->Render(x, y);
+	//RenderBoundingBox();
+}
+
+void CBrickBLUE3::Render()
+{
+	CAnimations* animations = CAnimations::GetInstance();
+	animations->Get(ID_ANI_BRICKBLUE3)->Render(x, y);
+	//RenderBoundingBox();
+}
+
+void CBrickBLUE4::Render()
+{
+	CAnimations* animations = CAnimations::GetInstance();
+	animations->Get(ID_ANI_BRICKBLUE4)->Render(x, y);
+	//RenderBoundingBox();
+}
+
+void CBrickBLUE5::Render()
+{
+	CAnimations* animations = CAnimations::GetInstance();
+	animations->Get(ID_ANI_BRICKBLUE5)->Render(x, y);
+	//RenderBoundingBox();
+}
+
+void CBrickBLUE6::Render()
+{
+	CAnimations* animations = CAnimations::GetInstance();
+	animations->Get(ID_ANI_BRICKBLUE6)->Render(x, y);
+	//RenderBoundingBox();
+}
+
+void CBrickBLUE7::Render()
+{
+	CAnimations* animations = CAnimations::GetInstance();
+	animations->Get(ID_ANI_BRICKBLUE7)->Render(x, y);
+	//RenderBoundingBox();
+}
+
+void CBrickBLUE8::Render()
+{
+	CAnimations* animations = CAnimations::GetInstance();
+	animations->Get(ID_ANI_BRICKBLUE8)->Render(x, y);
+	//RenderBoundingBox();
+}
+
+void CBrickBLUE9::Render()
+{
+	CAnimations* animations = CAnimations::GetInstance();
+	animations->Get(ID_ANI_BRICKBLUE9)->Render(x, y);
+	//RenderBoundingBox();
+}
+
 void CBrick::GetBoundingBox(float& l, float& t, float& r, float& b)
 {
 	l = x - BRICK_BBOX_WIDTH / 2;
@@ -161,6 +224,78 @@ void CBrickRed8::GetBoundingBox(float& l, float& t, float& r, float& b)
 }
 
 void CBrickRed9::GetBoundingBox(float& l, float& t, float& r, float& b)
+{
+	l = x - BRICK_BBOX_WIDTH / 2;
+	t = y - BRICK_BBOX_HEIGHT / 2;
+	r = l + BRICK_BBOX_WIDTH;
+	b = t + BRICK_BBOX_HEIGHT;
+}
+
+void CBrickBLUE1::GetBoundingBox(float& l, float& t, float& r, float& b)
+{
+	l = x - BRICK_BBOX_WIDTH / 2;
+	t = y - BRICK_BBOX_HEIGHT / 2;
+	r = l + BRICK_BBOX_WIDTH;
+	b = t + BRICK_BBOX_HEIGHT;
+}
+
+void CBrickBLUE2::GetBoundingBox(float& l, float& t, float& r, float& b)
+{
+	l = x - BRICK_BBOX_WIDTH / 2;
+	t = y - BRICK_BBOX_HEIGHT / 2;
+	r = l + BRICK_BBOX_WIDTH;
+	b = t + BRICK_BBOX_HEIGHT;
+}
+
+void CBrickBLUE3::GetBoundingBox(float& l, float& t, float& r, float& b)
+{
+	l = x - BRICK_BBOX_WIDTH / 2;
+	t = y - BRICK_BBOX_HEIGHT / 2;
+	r = l + BRICK_BBOX_WIDTH;
+	b = t + BRICK_BBOX_HEIGHT;
+}
+
+void CBrickBLUE4::GetBoundingBox(float& l, float& t, float& r, float& b)
+{
+	l = x - BRICK_BBOX_WIDTH / 2;
+	t = y - BRICK_BBOX_HEIGHT / 2;
+	r = l + BRICK_BBOX_WIDTH;
+	b = t + BRICK_BBOX_HEIGHT;
+}
+
+void CBrickBLUE5::GetBoundingBox(float& l, float& t, float& r, float& b)
+{
+	l = x - BRICK_BBOX_WIDTH / 2;
+	t = y - BRICK_BBOX_HEIGHT / 2;
+	r = l + BRICK_BBOX_WIDTH;
+	b = t + BRICK_BBOX_HEIGHT;
+}
+
+void CBrickBLUE6::GetBoundingBox(float& l, float& t, float& r, float& b)
+{
+	l = x - BRICK_BBOX_WIDTH / 2;
+	t = y - BRICK_BBOX_HEIGHT / 2;
+	r = l + BRICK_BBOX_WIDTH;
+	b = t + BRICK_BBOX_HEIGHT;
+}
+
+void CBrickBLUE7::GetBoundingBox(float& l, float& t, float& r, float& b)
+{
+	l = x - BRICK_BBOX_WIDTH / 2;
+	t = y - BRICK_BBOX_HEIGHT / 2;
+	r = l + BRICK_BBOX_WIDTH;
+	b = t + BRICK_BBOX_HEIGHT;
+}
+
+void CBrickBLUE8::GetBoundingBox(float& l, float& t, float& r, float& b)
+{
+	l = x - BRICK_BBOX_WIDTH / 2;
+	t = y - BRICK_BBOX_HEIGHT / 2;
+	r = l + BRICK_BBOX_WIDTH;
+	b = t + BRICK_BBOX_HEIGHT;
+}
+
+void CBrickBLUE9::GetBoundingBox(float& l, float& t, float& r, float& b)
 {
 	l = x - BRICK_BBOX_WIDTH / 2;
 	t = y - BRICK_BBOX_HEIGHT / 2;

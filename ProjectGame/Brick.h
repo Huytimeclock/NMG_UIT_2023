@@ -15,6 +15,15 @@
 #define ID_ANI_BRICKRED7 10017
 #define ID_ANI_BRICKRED8 10018
 #define ID_ANI_BRICKRED9 10019
+#define ID_ANI_BRICKBLUE1 10021
+#define ID_ANI_BRICKBLUE2 10022
+#define ID_ANI_BRICKBLUE3 10023
+#define ID_ANI_BRICKBLUE4 10024
+#define ID_ANI_BRICKBLUE5 10025
+#define ID_ANI_BRICKBLUE6 10026
+#define ID_ANI_BRICKBLUE7 10027
+#define ID_ANI_BRICKBLUE8 10028
+#define ID_ANI_BRICKBLUE9 10029
 #define BRICK_WIDTH 16
 #define BRICK_BBOX_WIDTH 16
 #define BRICK_BBOX_HEIGHT 16
@@ -102,6 +111,78 @@ public:
 class CBrickRed9 : public CGameObject {
 public:
 	CBrickRed9(float x, float y) : CGameObject(x, y) {}
+	void Render();
+	void Update(DWORD dt) {}
+	void GetBoundingBox(float& l, float& t, float& r, float& b);
+};
+
+class CBrickBLUE1 : public CGameObject {
+public:
+	CBrickBLUE1(float x, float y) : CGameObject(x, y) {}
+	void Render();
+	void Update(DWORD dt) {}
+	void GetBoundingBox(float& l, float& t, float& r, float& b);
+};
+
+class CBrickBLUE2 : public CGameObject {
+public:
+	CBrickBLUE2(float x, float y) : CGameObject(x, y) {}
+	void Render();
+	void Update(DWORD dt) {}
+	void GetBoundingBox(float& l, float& t, float& r, float& b);
+};
+
+class CBrickBLUE3 : public CGameObject {
+public:
+	CBrickBLUE3(float x, float y) : CGameObject(x, y) {}
+	void Render();
+	void Update(DWORD dt) {}
+	void GetBoundingBox(float& l, float& t, float& r, float& b);
+};
+
+class CBrickBLUE4 : public CGameObject {
+public:
+	CBrickBLUE4(float x, float y) : CGameObject(x, y) {}
+	void Render();
+	void Update(DWORD dt) {}
+	void GetBoundingBox(float& l, float& t, float& r, float& b);
+};
+
+class CBrickBLUE5 : public CGameObject {
+public:
+	CBrickBLUE5(float x, float y) : CGameObject(x, y) {}
+	void Render();
+	void Update(DWORD dt) {}
+	void GetBoundingBox(float& l, float& t, float& r, float& b);
+};
+
+class CBrickBLUE6 : public CGameObject {
+public:
+	CBrickBLUE6(float x, float y) : CGameObject(x, y) {}
+	void Render();
+	void Update(DWORD dt) {}
+	void GetBoundingBox(float& l, float& t, float& r, float& b);
+};
+
+class CBrickBLUE7 : public CGameObject {
+public:
+	CBrickBLUE7(float x, float y) : CGameObject(x, y) {}
+	void Render();
+	void Update(DWORD dt) {}
+	void GetBoundingBox(float& l, float& t, float& r, float& b);
+};
+
+class CBrickBLUE8 : public CGameObject {
+public:
+	CBrickBLUE8(float x, float y) : CGameObject(x, y) {}
+	void Render();
+	void Update(DWORD dt) {}
+	void GetBoundingBox(float& l, float& t, float& r, float& b);
+};
+
+class CBrickBLUE9 : public CGameObject {
+public:
+	CBrickBLUE9(float x, float y) : CGameObject(x, y) {}
 	void Render();
 	void Update(DWORD dt) {}
 	void GetBoundingBox(float& l, float& t, float& r, float& b);

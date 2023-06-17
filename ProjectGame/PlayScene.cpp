@@ -142,6 +142,24 @@ void CPlayScene::_ParseSection_OBJECTS(string line)
 			obj = new CBrickRed8(x, y);
 		else if (lastNumber == ID_ANI_BRICKRED9)
 			obj = new CBrickRed9(x, y);
+		else if (lastNumber == ID_ANI_BRICKBLUE1)
+			obj = new CBrickBLUE1(x, y);
+		else if (lastNumber == ID_ANI_BRICKBLUE2)
+			obj = new CBrickBLUE2(x, y);
+		else if (lastNumber == ID_ANI_BRICKBLUE3)
+			obj = new CBrickBLUE3(x, y);
+		else if (lastNumber == ID_ANI_BRICKBLUE4)
+			obj = new CBrickBLUE4(x, y);
+		else if (lastNumber == ID_ANI_BRICKBLUE5)
+			obj = new CBrickBLUE5(x, y);
+		else if (lastNumber == ID_ANI_BRICKBLUE6)
+			obj = new CBrickBLUE6(x, y);
+		else if (lastNumber == ID_ANI_BRICKBLUE7)
+			obj = new CBrickBLUE7(x, y);
+		else if (lastNumber == ID_ANI_BRICKBLUE8)
+			obj = new CBrickBLUE8(x, y);
+		else if (lastNumber == ID_ANI_BRICKBLUE9)
+			obj = new CBrickBLUE9(x, y);
 		else
 		{
 			DebugOut(L"[ERROR] Invalid last number for Brick object: %d\n", lastNumber);
